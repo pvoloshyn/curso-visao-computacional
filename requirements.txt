@@ -2,3 +2,8 @@ jupyter==1.1.1
 opencv-python==5.0.0.93
 opencv-contrib-python==5.0.0.93
 matplotlib==3.11.0
+ultralytics==8.4.101
+easyocr==1.7.2
+landingai-ade==1.15.0
+openai==2.48.0
+anomalib==2.5.1
