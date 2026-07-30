@@ -93,35 +93,39 @@ Algumas aulas usam serviços externos de IA. As chaves são sempre solicitadas i
 
 ### Aula 01 — Fundamentos de Imagens
 
-| Notebook | Descrição | |
+| Notebook | Descrição | <div style="width: 120px;" /> |
 |---|---|---|
 | 01.01 — Lendo, Mostrando e Salvando Imagens | Introdução ao OpenCV e manipulação básica de imagens. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/01_01_lendo_mostrando_salvando_imagens.ipynb) |
 | 01.02 — Imagens Coloridas | Espaços de cores, canais RGB e conversões. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/01_02_imagens_coloridas.ipynb) |
 | 01.03 — Histogramas | Análise de distribuição de pixels e contraste. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/01_03_histogramas.ipynb) |
 | 01.04 — Manipulação Básica | Redimensionamento, recorte, rotações e transformações. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/01_04_manipulacao_basica.ipynb) |
 | 01.05 — Ajustes, Filtros e Efeitos | Filtros espaciais, suavização e melhorias visuais. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/01_05_ajustes_filtros_efeitos.ipynb) |
+| 01. Exercícios | Exercícios para reforçar o entendimento da aula. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/01_exercicios.ipynb) |
 
 ### Aula 02 — Inteligência Visual
 
-| Notebook | Descrição | |
+| Notebook | Descrição | <div style="width: 120px;" /> |
 |---|---|---|
 | 02.01 — Classificação de Imagens | Módulo DNN do OpenCV, formato ONNX e classificação com MobileNetV2 e EfficientNet. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/02_01_classificacao.ipynb) |
 | 02.02 — Detecção e Segmentação de Objetos | Detecção, segmentação e vocabulário aberto com a família YOLO e SAM. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/02_02_deteccao_segmentacao_objetos.ipynb) |
+| 02. Exercícios | Exercícios para reforçar o entendimento da aula. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/02_exercicios.ipynb) |
 
 ### Aula 03 — Leitura Inteligente de Documentos
 
-| Notebook | Descrição | |
+| Notebook | Descrição | <div style="width: 120px;" /> |
 |---|---|---|
 | 03.01 — OCR | Extração de texto de imagens e documentos com EasyOCR, incluindo pré-processamento de scans ruins. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/03_01_ocr.ipynb) |
 | 03.02 — IDP (Intelligent Document Processing) | Transformando documentos em dados estruturados com a plataforma LandingAI (ADE). | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/03_02_idp.ipynb) |
 | 03.03 — VLM (Vision Language Models) | Modelos multimodais via OpenRouter para extrair e interpretar informações de imagens e documentos. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/03_03_vlm.ipynb) |
+| 03. Exercícios | Exercícios para reforçar o entendimento da aula. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/03_exercicios.ipynb) |
 
 ### Aula 04 — Detecção de Anomalias
 
-| Notebook | Descrição | |
+| Notebook | Descrição | <div style="width: 120px;" /> |
 |---|---|---|
 | 04.01 — Detecção de Anomalias | Modelo EfficientAD (`anomalib`) treinado só com imagens normais para detectar defeitos, com heatmap e máscara de anomalia. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/04_01_deteccao_anomalias.ipynb) |
 | 04.02 — Detecção de Anomalias com VLM | Combina o EfficientAD (localização precisa) com um VLM (laudo técnico em linguagem natural), incluindo saída estruturada em JSON. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/04_02_anomalia_vlm.ipynb) |
+| 04. Exercícios | Exercícios para reforçar o entendimento da aula. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/04_exercicios.ipynb) |
 
 ---
 
