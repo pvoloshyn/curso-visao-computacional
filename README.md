@@ -108,6 +108,7 @@ Algumas aulas usam serviços externos de IA. As chaves são sempre solicitadas i
 |---|---|---|
 | 02.01 — Classificação de Imagens | Módulo DNN do OpenCV, formato ONNX e classificação com MobileNetV2 e EfficientNet. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/02_01_classificacao.ipynb) |
 | 02.02 — Detecção e Segmentação de Objetos | Detecção, segmentação e vocabulário aberto com a família YOLO e SAM. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/02_02_deteccao_segmentacao_objetos.ipynb) |
+| 02.03 — Detecção e Segmentação com RF-DETR | Detecção, segmentação de objetos usando RF-DETR. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/02_03_rf_detr.ipynb) |
 | 02. Exercícios | Exercícios para reforçar o entendimento da aula. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/02_exercicios.ipynb) |
 
 ### Aula 03 — Leitura Inteligente de Documentos
