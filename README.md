@@ -7,7 +7,7 @@
 
 Material utilizado no curso **Visão Computacional Aplicada à Hiperautomação**.
 
-O objetivo deste curso é apresentar os principais conceitos e técnicas de Visão Computacional utilizados em iniciativas de automação inteligente, **OCR**, **IDP** (Intelligent Document Processing), **detecção de anomalias** e **VLMs** (Vision Language Models), combinando teoria e prática através de notebooks executáveis no Google Colab.
+O objetivo deste curso é apresentar os principais conceitos e técnicas de Visão Computacional utilizados em iniciativas de automação inteligente, **OCR**, **IDP** (Intelligent Document Processing), **detecção de anomalias**, **VLMs** (Vision Language Models), **rastreamento de objetos** e **reconhecimento facial**, combinando teoria e prática através de notebooks executáveis no Google Colab.
 
 ---
 
@@ -20,6 +20,7 @@ O objetivo deste curso é apresentar os principais conceitos e técnicas de Vis�
   - [Aula 02 — Inteligência Visual](#aula-02--inteligência-visual)
   - [Aula 03 — Leitura Inteligente de Documentos](#aula-03--leitura-inteligente-de-documentos)
   - [Aula 04 — Detecção de Anomalias](#aula-04--detecção-de-anomalias)
+  - [Aula 05 — Rastreamento e Reconhecimento](#aula-05--rastreamento-e-reconhecimento)
 - [Estrutura do repositório](#-estrutura-do-repositório)
 - [Público-alvo](#-público-alvo)
 
@@ -72,7 +73,7 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
-O arquivo [requirements.txt](requirements.txt) reúne todas as bibliotecas usadas ao longo do curso (`opencv-python`, `ultralytics`, `easyocr`, `landingai-ade`, `openai`, `anomalib`, entre outras). Algumas aulas têm dependências específicas — se preferir instalar sob demanda, siga o `!pip install` indicado no topo de cada notebook.
+O arquivo [requirements.txt](requirements.txt) reúne todas as bibliotecas usadas ao longo do curso (`opencv-python`, `ultralytics`, `easyocr`, `landingai-ade`, `openai`, `anomalib`, `trackers`, `insightface`, `mediapipe`, entre outras). Algumas aulas têm dependências específicas — se preferir instalar sob demanda, siga o `!pip install` indicado no topo de cada notebook.
 
 > 💡 As pastas `imagens/`, `datasets/` e `modelos/` contêm os arquivos de apoio (fotos, datasets e checkpoints de modelos) usados pelos notebooks e já fazem parte do repositório.
 
@@ -128,6 +129,17 @@ Algumas aulas usam serviços externos de IA. As chaves são sempre solicitadas i
 | 04.02 — Detecção de Anomalias com VLM | Combina o EfficientAD (localização precisa) com um VLM (laudo técnico em linguagem natural), incluindo saída estruturada em JSON. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/04_02_anomalia_vlm.ipynb) |
 | 04. Exercícios | Exercícios para reforçar o entendimento da aula. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/04_exercicios.ipynb) |
 
+### Aula 05 — Rastreamento e Reconhecimento
+
+| Notebook | Descrição | <div style="width: 120px;" /> |
+|---|---|---|
+| 05.01 — Rastreamento de Objetos com YOLO + ByteTrack | Rastreamento de objetos em vídeo combinando os detectores YOLO com o `ByteTrack`, via `ultralytics`, atribuindo um ID persistente a cada objeto entre os quadros. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/05_01_rastreamento_objetos.ipynb) |
+| 05.02 — Rastreamento de Objetos com a Biblioteca `trackers` da Roboflow | Rastreamento com a biblioteca `trackers`, da Roboflow, que separa o detector do rastreador, incluindo o `MotionEstimator` para compensar o movimento da câmera. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/05_02_rastreamento_objetos_roboflow.ipynb) |
+| 05.03 — Detecção de Faces com a InsightFace | Detecção facial especializada com a `insightface`: localização, pontos de referência (*landmarks*) e estimativa de idade/gênero. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/05_03_deteccao_faces.ipynb) |
+| 05.04 — Reconhecimento de Faces com a InsightFace | Reconhecimento facial com embeddings do `ArcFace` (`buffalo_l`): comparação de rostos e verificação de identidade 1:1. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/05_04_reconhecimento_faces.ipynb) |
+| 05.05 — Pose Estimation com o MediaPipe | Estimativa de pose humana com o MediaPipe: localização do esqueleto (landmarks de ombros, cotovelos, quadris, joelhos etc.) para análise de postura e reconhecimento de gestos. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/05_05_pose_estimation.ipynb) |
+| 05. Exercícios | Exercícios para reforçar o entendimento da aula. | [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pvoloshyn/curso-visao-computacional/blob/main/05_exercicios.ipynb) |
+
 ---
 
 ## 🗂️ Estrutura do repositório
@@ -135,7 +147,7 @@ Algumas aulas usam serviços externos de IA. As chaves são sempre solicitadas i
 ```
 curso-visao-computacional/
 ├── 01_01...05_...ipynb   # Notebooks das aulas (numerados por aula.tópico)
-├── imagens/              # Imagens de apoio, organizadas por aula (01/, 02/, 03/, 04/)
+├── imagens/              # Imagens de apoio, organizadas por aula (01/, 02/, 03/, 04/, 05/)
 ├── datasets/             # Datasets usados na Aula 04 (MVTec AD, Imagenette)
 ├── modelos/              # Checkpoints/pesos de modelos pré-treinados
 ├── scripts/              # Scripts auxiliares (ex.: download de datasets e treino da Aula 04)
