@@ -14,3 +14,4 @@ anomalib==2.5.1
 insightface==1.0.1
 mediapipe==1.0.1
 scikit-learn==1.9.0
+lap==0.5.13
